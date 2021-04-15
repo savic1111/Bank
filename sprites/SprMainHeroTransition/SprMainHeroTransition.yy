@@ -33,16 +33,19 @@
     {"compositeImage":{"FrameId":{"name":"0f7e0aa5-ab17-4384-b703-fde52ec98126","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0f7e0aa5-ab17-4384-b703-fde52ec98126","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"LayerId":{"name":"21677137-53f1-4e58-8753-12484d7954e5","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"SprMainHeroTransition","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","name":"0f7e0aa5-ab17-4384-b703-fde52ec98126","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5f00ce7c-1220-4544-81c3-d02c2ddbf906","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5f00ce7c-1220-4544-81c3-d02c2ddbf906","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"LayerId":{"name":"21677137-53f1-4e58-8753-12484d7954e5","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"SprMainHeroTransition","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","name":"5f00ce7c-1220-4544-81c3-d02c2ddbf906","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"SprMainHeroTransition","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 3.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,6 +53,7 @@
             {"id":"7c75b737-3371-4019-a893-16b72b89ad6e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b879da3-0747-434a-8fb3-f104414fc528","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"fcc71c2f-0d62-471f-a526-bdc92a59936e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"51d3f52f-7939-4586-8e2b-e469f8862366","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"901ac67d-6d64-460c-88ff-f6410629d059","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f7e0aa5-ab17-4384-b703-fde52ec98126","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"25646ff0-4358-4e5d-b53d-ab4f54ec64b4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f00ce7c-1220-4544-81c3-d02c2ddbf906","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -68,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"SprMainHeroTransition","path":"sprites/SprMainHeroTransition/SprMainHeroTransition.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "SprMainHeroTransition",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -1,11 +1,11 @@
-function Running(argument0, argument1, argument2) {
-	if(keyboard_check(vk_lshift) and place_meeting(x,y+argument0,Wall))
+function Running(argument0,argument1) {
+	if(keyboard_check(vk_lshift) and place_meeting(x,y+1,oGround))
 	{
-		acceleration=argument1;
+		max_hspeed_ = argument0
+		acceleration = argument1;
 	}else
 	{
-		acceleration =argument2;
+		max_hspeed_ = 18;
+		acceleration = 2;
 	}
-
-
 }

@@ -15,40 +15,18 @@ if(x<=TestMainhero.x-357)
 }*/
 
 
-switch(move_camera)
-{
+
 	
-	
-	case true:
-	count+=1;
-	
-	if(count>200)
+	if(MasterMainhero.x-x >=camera_get_view_width(cam)-356*zoom)
 	{
-	x-=2;
-	}
-	
-	
-	break;
-	
-	case false:
-	
-
-
-
-
-
-
-
-	if(TestMainhero.x-x >=camera_get_view_width(cam)-356*zoom)
-	{
-		x+=TestMainhero.hspeed_;
+		x+=MasterMainhero.hspeed_;
 		camera_set_view_pos(cam,x,y-view_h_half)
 		
 	}
 	
-	if(TestMainhero.x-x <camera_get_view_width(cam)-1620*zoom)
+	if(MasterMainhero.x-x <camera_get_view_width(cam)-120*zoom)
 	{
-		x-= -(TestMainhero.hspeed_);
+		x-= -(MasterMainhero.hspeed_);
 		camera_set_view_pos(cam,x,y-view_h_half)
 		
 	}
@@ -57,11 +35,12 @@ switch(move_camera)
 	
 	//camera_set_view_pos(cam,x,y-view_h_half);
     
-	break;
-	
-}
 
+target_zoom+=1/8;
+camera_set_view_size(cam,orig_x_size*zoom,orig_y_size*zoom);
+ zoom = clamp(target_zoom,1,2);
 
+/*
 if(keyboard_check(ord("J")))
 {
 target_zoom+=1/8;
@@ -79,7 +58,7 @@ camera_set_view_size(cam,orig_x_size*zoom,orig_y_size*zoom);
 	x+=random_range(-shake_remain,shake_remain);
     y+=random_range(-shake_remain,shake_remain);
     shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude));
-
+*/
    
 
     var mouse_input = mouse_wheel_down()-mouse_wheel_up();

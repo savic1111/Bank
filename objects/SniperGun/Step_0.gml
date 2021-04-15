@@ -1,22 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
-x = EnemySniper.x;
-y = EnemySniper.y+10;
+x = EnemySniper.x-15;
+y = EnemySniper.y+7;
 
 image_xscale = abs(EnemySniper.image_xscale);
 image_yscale = abs(EnemySniper.image_yscale);
 
-if(instance_exists(TestMainhero))
+if(instance_exists(MasterMainhero))
 {
-	if(TestMainhero.x<x) image_yscale =-image_yscale;
+	if(MasterMainhero.x<x) image_yscale =-image_yscale;
 	
-		image_angle = point_direction(x,y,TestMainhero.x,TestMainhero.y);
-		
-		
-		image_angle = point_direction(x,y,TestMainhero.x,TestMainhero.y);
+		image_angle = point_direction(x,y,MasterMainhero.x,MasterMainhero.y);
+		image_angle = point_direction(x,y,MasterMainhero.x,MasterMainhero.y);
 		
 			
-			if(!collision_line(x,y,TestMainhero.x,TestMainhero.y,Wall,false,false))
+			if(!collision_line(x,y,MasterMainhero.x,MasterMainhero.y,oGround,false,false) and!collision_line(x,y,MasterMainhero.x,MasterMainhero.y,Limit,false,false) )
 			{
 				onTarget = true;	
 		}else
@@ -30,7 +28,7 @@ if(instance_exists(TestMainhero))
 			countdown--;
 			if(countdown==0)
 			{
-				with(instance_create_layer(x,y,"Bullets",EnemyBullet))
+				with(instance_create_layer(x,y,"Bullets",SniperBullet))
 	{
 		speed=75;
 		//Разброс 

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-with(Grenade) instance_destroy();
+with(MasterMainhero) instance_destroy();
+with(AudioGhost) instance_destroy();
+
 
 if(file_exists("savedgame.sav"))
 {

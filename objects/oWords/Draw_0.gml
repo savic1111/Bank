@@ -25,10 +25,6 @@ if(timer>500) and(page+1<array_length_1d(text))
 if(timer ==510  )
 {   
 	
-	for(i =0;i<10;i++)
-	{
-		randomize();
-		part_particles_create(mySystem,random(room_width),random(room_height),myParticle,1);
-	}
+	room_goto(Room11)
 }
 

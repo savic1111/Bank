@@ -7,6 +7,6 @@ repeat(buttons){
 	draw_set_color(c_ltgray);
 	var view_w_half = camera_get_view_width(view_camera[0])*0.5;
 	if(menu_index == i) draw_set_color(c_red);
-	draw_text(1920,menu_y+button_h*i,button[i]);
+	draw_text(x,y+button_h*i,button[i]);
 	i++;
 }

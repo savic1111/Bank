@@ -6,16 +6,30 @@ enum state_hero{
 	trans
 }
 
+Anim = SprMainhero;
+
 onStair = false;
 Speed = 20;
 Angle = 45;
 gra = 0.75;
 
+is_dashing = false;
+dash_speed = 40;
+dash_counter = 0;
 
+rotation = image_angle;
+
+
+
+global.TutorialPause = 0;
 movement = true;
 keyReload = keyboard_check_pressed(ord("R"));
 shoot = true;
 GunSlot = 0;
+
+
+moveLeft = false;
+moveRight = false;
 
 canDust = true;
 SitDownAndGetUp = 0;

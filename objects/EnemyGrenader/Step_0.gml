@@ -7,41 +7,34 @@
 
 
 
-XscaleEnemy(x);
+//XscaleEnemy(x);
+	if(global.pause)exit;
+if(global.pause==0)
+	{
+DropGrenade(1,1);
+	}
 	
-	DropGrenade();
+	if(health_enemy<=0)
+	{
+		oConditions.enemy+=1;
+		instance_destroy();
+	}
 switch(state)
 {
 	case state_enemy.idle:
 	{  
 		
-		ReversePath();
-		hspeed_enemy = 1;
-		vspeed_enemy = vspeed_enemy + grav;
 		
-		if(abs(EnemyGrenader.x-TestMainhero.x)<100) state = state_enemy.chase;
+		hspeed_enemy = 0;
+		vspeed_enemy = vspeed_enemy + grav;
 	}
-	break;
-	case state_enemy.chase:
-	{
-		dir = sign(TestMainhero.x-x);
-
-if(!place_meeting(x+300*(-image_xscale),y+100,Wall))
-{
-	state = state_enemy.idle;
-}
-
-		hspeed_enemy = (dir*6);
-		vspeed_enemy = vspeed_enemy+grav;
-	}
-		//if(distance_to_object(TestMainhero)>128) state = state_enemy.idle;
 	break;
 }
 
 
-if (place_meeting(x+hspeed_enemy,y,Wall))
+if (place_meeting(x+hspeed_enemy,y,oGround))
 {
-	while(!place_meeting(x+sign(hspeed_enemy),y,Wall))
+	while(!place_meeting(x+sign(hspeed_enemy),y,oGround))
 	{
 		x=x+sign(hspeed_enemy);
 	}	
@@ -49,9 +42,9 @@ if (place_meeting(x+hspeed_enemy,y,Wall))
 }
 x+=hspeed_enemy;
 
-if (place_meeting(x,y+vspeed_enemy,Wall))
+if (place_meeting(x,y+vspeed_enemy,oGround))
 {
-	while(!place_meeting(x,y+sign(vspeed_enemy),Wall))
+	while(!place_meeting(x,y+sign(vspeed_enemy),oGround))
 	{
 		y=y+sign(vspeed_enemy);
 	}	

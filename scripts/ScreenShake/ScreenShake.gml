@@ -1,7 +1,7 @@
 function ScreenShake(argument0, argument1) {
 
 
-	with(oCamera)
+	with(oCameraForBigRoom)
 	{
 		if(argument0>shake_remain)
 		{

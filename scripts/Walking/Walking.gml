@@ -1,15 +1,27 @@
-function Walking(argument0, argument1) {
-	left_step = keyboard_check(vk_left);
-	right_step = keyboard_check(vk_right);
-	jump_step = keyboard_check_pressed(vk_space);
-
-	var move_=right_step-left_step;
-
-	hspeed_ = lerp(hspeed_,acceleration*move_,argument0);
-	vspeed_ = vspeed_+argument1;
-
-
-
+function Walking() {
+	
+	if(hinput!=0)
+{
+	hspeed_+=(hinput*acceleration)*global.timeMultiplier;
+	hspeed_ = clamp(hspeed_,-max_hspeed_*global.timeMultiplier,max_hspeed_*global.timeMultiplier)
+}else
+{
+	hspeed_ = lerp(hspeed_,0,friction_);
+}
 
 
+	
+	
+	if(hspeed_==0)
+	{
+		sprite_index = SprMainhero;
+	}
+	else if(hspeed_>0)
+	{
+		sprite_index=SprMainHeroRun;
+	}else
+	{
+		sprite_index=SprMainHeroRunLeft;
+	}
+	
 }

@@ -1,8 +1,10 @@
 function ThroughTheCover() {
-	if(place_meeting(x+hspeed_,y,Cover))
+	if(place_meeting(x+hspeed_,y,Cover)) and keyboard_check_pressed(ord("F"))
 	{
-		x= Cover.x-(120*image_xscale);
-		y=Cover.y-100;
+		
+		//layer_sequence_create("Instances",TestMainhero.x,TestMainhero.y,CoverThrough);
+		x= Cover.x-(100*image_xscale);
+		y=Cover.y-300;
 	
 	}
 

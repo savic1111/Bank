@@ -5,5 +5,5 @@ var snowRandom = ceil(random(1));
 
 if(snowRandom == 1){
 	
-	instance_create_layer(0,0,"Instances",oSnow);
+	instance_create_layer(1,6532,"Instances",oSnow);
 }

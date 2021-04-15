@@ -2,15 +2,11 @@
 // You can write your code in this editor
 draw_self();
 
+//draw_line(x+300*(-image_xscale),y+100,x+300*(-image_xscale),y-100);
 
-show_debug_message(hspeed_enemy);
-
-
-
-draw_line(x+300*(-image_xscale),y+100,x+300*(-image_xscale),y-100);
-
-
-/*draw_rectangle(x+801,y+2000,x+901,y+640,1);
+HealthBar(EnemyGrenader,health_enemy,health_enemy_max);
+/*
+draw_rectangle(x+801,y+2000,x+901,y+640,1);
 draw_rectangle(x+701,y+2000,x+801,y+640,1);
 draw_rectangle(x+601,y+2000,x+701,y+640,1);
 draw_rectangle(x+501,y+2000,x+601,y+640,1);

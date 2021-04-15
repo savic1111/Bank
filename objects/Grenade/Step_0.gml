@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(y >=TestMainhero.y)
+if(y >=MasterMainhero.y)
 {
 	
 	instance_destroy();

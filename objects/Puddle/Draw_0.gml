@@ -2,14 +2,14 @@
 // You can write your code in this editor
 draw_self();
 
-if(place_meeting(x,y-1,TestMainhero)){
+if(place_meeting(x,y-1,MasterMainhero)){
 	surface_player = surface_create(sprite_width,sprite_height);
 	if(surface_exists(surface_player))
 	{
 		surface_set_target(surface_player);
 		draw_clear_alpha(c_black,0);
 		
-		with(TestMainhero){
+		with(MasterMainhero){
 			draw_sprite_ext(sprite_index,image_index,x-other.x,y-other.y+100,1,-1,0,c_white,0.6);
 		}
 		

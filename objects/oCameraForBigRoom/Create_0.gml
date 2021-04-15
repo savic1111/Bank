@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-move_camera = false;
+
 
 count = 0;
 
@@ -10,16 +10,16 @@ y = camera_get_view_height(cam)*0.5;
 x = camera_get_view_width(cam)*0.5;
 
 
-follow = TestMainhero;
+follow = MasterMainhero;
 orig_x_size = 1920;
-orig_y_size = 1080;
-zoom = 1;
+orig_y_size = 980;
+zoom = 3;
 target_zoom = zoom;
 
 xTo = xstart;
 yTo = ystart;
 
-shake_length = 60;
-shake_magnitude = 6;
-shake_remain = 6;
+shake_length = 6000;
+shake_magnitude = 600;
+shake_remain = 6000;
 buff = 32;

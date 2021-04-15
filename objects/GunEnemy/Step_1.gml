@@ -3,25 +3,27 @@
 
 if(instance_exists(Enemy))
 {
-x = owner.x;
-y = owner.y+10;
+x = Enemy.x;
+y = Enemy.y-10;
 
 image_xscale = abs(Enemy.image_xscale);
 image_yscale = abs(Enemy.image_yscale);
-
-if(instance_exists(TestMainhero))
-{
-	if(TestMainhero.x<x) image_yscale =-image_yscale;
-	if(point_distance(TestMainhero.x,TestMainhero.y,x,y)<600)
+if(global.pause==0)
 	{
-		image_angle = point_direction(x,y,TestMainhero.x,TestMainhero.y);
+
+if(instance_exists(MasterMainhero))
+{
+	if(MasterMainhero.x<x) image_yscale =-image_yscale;
+	if(point_distance(MasterMainhero.x,MasterMainhero.y,x,y)<1600)
+	{
+		image_angle = point_direction(x,y,MasterMainhero.x,MasterMainhero.y);
 		countdown--;
 		
 		if(countdown<=0)
 		{
 			countdown = countdownrate;
 			
-			if(!collision_line(x,y,TestMainhero.x,TestMainhero.y,Wall,false,false))
+			if(!collision_line(x,y,MasterMainhero.x,MasterMainhero.y,oGround,false,false))
 			{
 				if(ammo_enemy>0)
 				{
@@ -30,7 +32,7 @@ if(instance_exists(TestMainhero))
 	{
 		speed=25;
 		//Разброс 
-		direction = other.image_angle + random_range(-3,3);
+		direction = other.image_angle; //+ random_range(-3,3);
 		image_angle=direction
 	}
 	ammo_enemy--;
@@ -38,5 +40,6 @@ if(instance_exists(TestMainhero))
 		}
 	}
 	}
+}
 }
 }

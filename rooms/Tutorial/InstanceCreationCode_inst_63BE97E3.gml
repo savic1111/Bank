@@ -1,0 +1,1 @@
+EnemyPoint = 20;
