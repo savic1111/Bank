@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*yspd+=grav;
+
+
+x-=10;
+image_angle-=5*pi;
+
+/*
 if (place_meeting(x+xspd,y,Wall))
 {
 	while(!place_meeting(x+sign(xspd),y,Wall))
@@ -10,7 +15,7 @@ if (place_meeting(x+xspd,y,Wall))
 	xspd*=-bouncedecay;
 }
 
-if (place_meeting(x,y+yspd,Wall))
+if (place_meeting(x,y+yspd,oGround))
 {
 	while(!place_meeting(x,y+sign(yspd),Wall))
 	{
@@ -22,4 +27,5 @@ if (place_meeting(x,y+yspd,Wall))
 x+=xspd;
 y+=yspd;
 */
+
 

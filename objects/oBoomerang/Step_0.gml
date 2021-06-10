@@ -15,7 +15,7 @@ if(global.pause)
     speed = global.speedBoomerang;
 }
 
-if(place_meeting(x,y,TestMainhero))
+if(place_meeting(x,y,MasterMainhero))
 {
 	instance_destroy();
 }

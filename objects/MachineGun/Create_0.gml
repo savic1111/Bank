@@ -5,3 +5,4 @@ countdown = countdownrate;
 rigth =false;
 left = false;
 n = 205;
+  alarm[0] = (room_speed*2);

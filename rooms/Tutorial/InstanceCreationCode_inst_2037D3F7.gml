@@ -1,1 +1,0 @@
-EnemyPoint = 10;

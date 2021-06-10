@@ -5,7 +5,7 @@ var i = 0;
 switch(fireball)
 {
 	case bad_things.darkScreen:
-	
+	darkS = true;
 	
 	choice_index=0;
 	if(dark>0)
@@ -14,7 +14,7 @@ switch(fireball)
 	timer_ability+=1/room_speed;
 	if(timer_ability<5)
 	{
-		BlackScreen();
+		//BlackScreen();
 	}else
 	{
 	    dark-=1;	

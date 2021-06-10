@@ -10,7 +10,7 @@ if(timer >= randomAction)
 {
 	
 	fireball = choose(bad_things.darkScreen,bad_things.whiteScreen);
-	randomAction = irandom_range(0,10);
+	randomAction = irandom_range(6,20);
 	timer = 0;
 }
 

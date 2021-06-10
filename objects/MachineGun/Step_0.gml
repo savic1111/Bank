@@ -3,6 +3,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/*
 	if(n==205)
 		{
 			right = true;
@@ -26,21 +27,13 @@
 		}
 		
 		image_angle =n;
+		*/
+	if (alarm[0] == -1)
+{
+    alarm[0] = (count_p);
+}
+
+
 		
-		
-		countdown--;
-		
-		if(countdown<=0)
-		{
-			countdown = countdownrate;
-					
-	 with(instance_create_layer(x,y,"Bullets",EnemyBullet))
-	{
-		speed=35;
-		//Разброс 
-		direction = other.image_angle; //+ random_range(-3,3);
-		image_angle=direction
-	}		
-	}
 	
 

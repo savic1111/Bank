@@ -3,7 +3,7 @@
 function Shoot(){
 firingdelay = firingdelay-1;
 recoil = max(0,recoil-1);
-if(mouse_check_button_pressed(mb_left))|| (gamepad_button_check_pressed(4,gp_shoulderrb))
+if(mouse_check_button_pressed(mb_left))
   {
 	
 	//gamepad_set_vibration(4,1,1)
@@ -27,6 +27,7 @@ if(mouse_check_button_pressed(mb_left))|| (gamepad_button_check_pressed(4,gp_sho
 			
 	x=x-lengthdir_x(recoil,image_angle);
 	y=y-lengthdir_y(recoil,image_angle);
+  }
   }
 
 
@@ -54,6 +55,18 @@ if(mouse_check_button_pressed(mb_right))
 	x=x-lengthdir_x(recoil,image_angle);
 	y=y-lengthdir_y(recoil,image_angle);
 }
-}
-}
+}else if  instance_exists(oSpecialAmmo)
+	{
+		if mouse_check_button_pressed(mb_right)
+		{
+			MasterMainhero.x = oSpecialAmmo.x;
+			MasterMainhero.y = oSpecialAmmo.y;
+			
+			with (oSpecialAmmo)
+			{
+				instance_destroy();
+			}
+		}
+	
+	}
 }

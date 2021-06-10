@@ -11,6 +11,8 @@ enum bad_things{
 
 fireball = bad_things.restTime;
 
+
+darkS = false;
 choice_x = x;
 choice_y = y;
 

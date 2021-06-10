@@ -3,10 +3,16 @@
 function DoubleJump(){
 	if(airjump>0)
 	  {
-	    if keyboard_check_pressed(vk_up) ||  gamepad_button_check_pressed(4,gp_face1)
+	    if keyboard_check_pressed(vk_up)
 	       {
+			   
 	 	     vspeed_ = argument0;
 		     airjump-=1;
 	       }
+		   
+		   
+		   
+		  
+		   
 	  }
 }

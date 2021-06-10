@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
+draw_text(x,y,hspeed_);
+draw_line(x-1000,y+52,x+1000,y+32);
 
 //draw_text(x,y,RandomCondition.chosen_condition);
 if(keyboard_check(ord("Y")))
